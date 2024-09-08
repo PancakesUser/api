@@ -1,0 +1,35 @@
+{
+  "name": "node-express-api-ts",
+  "description": "Simple api sample in Node",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch 'src/**' --ext 'ts,json' --exec 'npm run build && npm run start'",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "author": "Google LLC",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@types/morgan": "^1.9.9",
+    "connect-mongodb-session": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mongoose": "^8.6.1",
+    "morgan": "^1.10.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/connect-mongodb-session": "^2.4.7",
+    "@types/express-session": "^1.18.0",
+    "@types/node": "^20.12.12",
+    "@types/passport-local": "^1.0.38",
+    "@types/password": "^0.1.2",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.5"
+  }
+}
